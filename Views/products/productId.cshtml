@@ -1,0 +1,14 @@
+﻿@Model Products
+
+    <div style="padding: 20px;">
+        {
+                <h3>id = @Model.id</h3>
+                <h3>product Name = @Model.productName</h3>
+                <h3>price = @Model.price</h3>
+                <h3>description = @Model.description</h3>
+                <h3>
+                    <img src="/Images/@Model.imageURL" alt="@Model.productName" style="width:200px; margin:20px 0;" />
+                </h3>
+        }
+        <a href="/Products/allProducts" class="btn btn-secondary">return back to All product</a>
+    </div>
